@@ -22,5 +22,6 @@ namespace WebApi.Models
 
         [Required]
         public int SubCategoryId { get; set; }
+
     }
 }
