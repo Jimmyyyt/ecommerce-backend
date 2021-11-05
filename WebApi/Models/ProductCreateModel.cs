@@ -21,6 +21,9 @@ namespace WebApi.Models
         public string ImageUrl { get; set; }
 
         [Required]
+        public int CountInStock { get; set; }
+
+        [Required]
         public int SubCategoryId { get; set; }
 
     }

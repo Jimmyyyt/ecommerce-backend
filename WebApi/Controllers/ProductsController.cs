@@ -91,7 +91,8 @@ namespace WebApi.Controllers
                         Description = model.Description,
                         Price = model.Price,
                         SubCategoryId = model.SubCategoryId,
-                        ImageUrl = model.ImageUrl
+                        ImageUrl = model.ImageUrl,
+                        CountInStock = model.CountInStock
                     };
 
                     _context.Products.Add(product);
