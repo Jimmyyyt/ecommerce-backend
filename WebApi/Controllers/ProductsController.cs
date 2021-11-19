@@ -77,7 +77,7 @@ namespace WebApi.Controllers
         // POST: api/Products
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Product>> PostProduct([FromForm] ProductCreateModel model)
+        public async Task<ActionResult<Product>> PostProduct(ProductCreateModel model)
         {
             if (!string.IsNullOrEmpty(model.Name) && !string.IsNullOrEmpty(model.ImageUrl) && model.SubCategoryId > 0)
             {
